@@ -53,7 +53,6 @@ class Cell:
             if Cell.cell_count == settings.MINES_COUNT:
                 ctypes.windll.user32.MessageBoxW(0, 'You won the game', 'Congratulations!', 0)
 
-
         #Cancel left and right click events if cell is already opened
         self.cell_btn_object.unbind('<Button-1>')
         self.cell_btn_object.unbind('<Button-3>')
